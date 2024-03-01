@@ -6,11 +6,11 @@
 /*   By: cbousset <cbousset@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/15 15:42:16 by cbousset          #+#    #+#             */
-/*   Updated: 2023/12/15 15:45:56 by cbousset         ###   ########.fr       */
+/*   Updated: 2024/03/01 17:34:25 by cbousset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "myLib.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

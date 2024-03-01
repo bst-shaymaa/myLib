@@ -6,7 +6,7 @@
 /*   By: cbousset <cbousset@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 10:59:45 by cbousset          #+#    #+#             */
-/*   Updated: 2024/03/01 17:13:48 by cbousset         ###   ########.fr       */
+/*   Updated: 2024/03/01 17:35:59 by cbousset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static size_t	count_words(const char *s, char c)
 	return (count);
 }
 
-static char	**ft_free(char **str)
+static char	**ft_free_s(char **str)
 {
 	size_t	i;
 
@@ -73,7 +73,7 @@ char	**ft_split(char const *s, char c)
 			i++;
 		result[j++] = ft_substr(s, start, i - start);
 		if (!result[j - 1])
-			return (ft_free(result));
+			return (ft_free_s(result));
 	}
 	result[j] = NULL;
 	return (result);

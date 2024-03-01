@@ -6,11 +6,11 @@
 /*   By: cbousset <cbousset@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 12:30:16 by cbousset          #+#    #+#             */
-/*   Updated: 2024/02/10 18:00:46 by cbousset         ###   ########.fr       */
+/*   Updated: 2024/03/01 17:34:46 by cbousset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "myLib.h"
 
 char	*new_line(char *s)
 {

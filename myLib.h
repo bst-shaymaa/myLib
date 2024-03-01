@@ -6,7 +6,7 @@
 /*   By: cbousset <cbousset@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 15:25:31 by cbousset          #+#    #+#             */
-/*   Updated: 2024/03/01 17:19:03 by cbousset         ###   ########.fr       */
+/*   Updated: 2024/03/01 17:39:42 by cbousset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,6 +91,9 @@ int		ft_putunsigned(unsigned long n);
 int		ft_printf(const char *str, ...);
 
 /* Get next line */
+char	*ft_strjoin_gnl(char *s1, char *s2);
+char	*ft_strchr_gnl(char *str, int c);
+char	*ft_substr_gnl(char *s, unsigned int start, size_t len);
 char	*ft_free(char **str);
 char	*ft_read(int fd, char *s);
 char	*ft_clean(char *s);

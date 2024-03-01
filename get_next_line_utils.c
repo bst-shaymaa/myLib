@@ -6,23 +6,12 @@
 /*   By: cbousset <cbousset@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 12:30:37 by cbousset          #+#    #+#             */
-/*   Updated: 2024/02/12 11:32:36 by cbousset         ###   ########.fr       */
+/*   Updated: 2024/03/01 17:39:19 by cbousset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "myLib.h"
 
-size_t	ft_strlen(char *str)
-{
-	size_t	i;
-
-	i = 0;
-	if (!str)
-		return (0);
-	while (str[i])
-		i++;
-	return (i);
-}
 
 char	*ft_free(char **str)
 {
@@ -31,7 +20,7 @@ char	*ft_free(char **str)
 	return (NULL);
 }
 
-char	*ft_strjoin(char *s1, char *s2)
+char	*ft_strjoin_gnl(char *s1, char *s2)
 {
 	char	*str;
 	size_t	len;
@@ -60,7 +49,7 @@ char	*ft_strjoin(char *s1, char *s2)
 	return (str);
 }
 
-char	*ft_strchr(char *str, int c)
+char	*ft_strchr_gnl(char *str, int c)
 {
 	if (!str)
 		return (NULL);
@@ -76,7 +65,7 @@ char	*ft_strchr(char *str, int c)
 		return (NULL);
 }
 
-char	*ft_substr(char *s, unsigned int start, size_t len)
+char	*ft_substr_gnl(char *s, unsigned int start, size_t len)
 {
 	size_t	i;
 	size_t	l;
